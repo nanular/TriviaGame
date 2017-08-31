@@ -31,7 +31,6 @@ $("#startButton").click(function() {
 	$("#startQuiz").toggle();
 	$(".allQuestions").toggle();
 	$(".allAnswers").toggle();
-	$("#timerDisplay").html("0:" + secondsRemaining);
 	loadNextQuestion();
 	questionTimer();
 })
@@ -72,6 +71,8 @@ function randomizeAnswers() {
 
 
 function questionTimer() {
+	secondsRemaining = 30;
+	$("#timerDisplay").html("0:" + secondsRemaining);
 	intervalID = setInterval(timerCountdown, 1000);
 	function timerCountdown() {
 		secondsRemaining--;
@@ -81,6 +82,8 @@ function questionTimer() {
       	$("#triviaMessage").html("Time Is Up!");
       	numberUnanswered++;
       	answerButtonLock = true;
+		} else if (secondsRemaining < 28) {
+			$("#triviaMessage").html("")
 		} else if(secondsRemaining < 10) {
 			$("#timerDisplay").html("0:0" + secondsRemaining);
 		} else {
@@ -96,9 +99,11 @@ $(".btn").click(function() {
 		$("#triviaMessage").html("Congratulations!<br>That is correct!");
 		numberCorrect++;
 		currentQuestionIndex++;
-		secondsRemaining = 30;
 		clearInterval(intervalID);
 		loadNextQuestion();
+		questionTimer();
+	} else {
+
 	}
 
 }) 
