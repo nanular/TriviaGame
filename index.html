@@ -18,7 +18,7 @@
 	<body>
 
 	<header>
-		<h1 class="text-center">This is the header.</h1>		
+		<h1 class="text-center">90's Quiz</h1>		
 	</header>
 
 
@@ -39,56 +39,33 @@
 	<div class="container allQuestions">
 		<div class="row">
 			<div class="col-1"></div>
-			<div class="col-5 questionOne">
-				<h2>Question 01:</h2>
-				<br>
-				<p>
-					What is the very first answer in this quiz?
-				</p>
-			</div>
-
-
-		<div class="col-5 answersOne">
-				<ul>
-					<li><input type="radio" name="answer1" value="1a"> Answer 1A</input></li>
-					<li><input type="radio" name="answer1" value="1b"> Answer 1B</input></li>
-					<li><input type="radio" name="answer1" value="1c"> Answer 1C</input></li>
-					<li><input type="radio" name="answer1" value="1d"> Answer 1D</input></li>
-				</ul>
+			<div class="col-10 currentQuestion">
+				<h2 id="questionHeader"></h2><br>
+				<p id="questionParagraph"></p>
 			</div>
 			<div class="col-1"></div>
 		</div>
-
-
-
-
-		<div class="row buttonsAndTimer">
-			<div class="col-1"></div>
-			<div class="col-1">
-				<button type="submit" class="btn btn-primary">Submit</button>
-			</div>
-			<div class="col-1"></div>
-			<div class="col-1">
-				<button type="button" class="btn btn-primary">Skip</button>
-			</div>
-			<div class="col-1"></div>
-			<div class="col-2">
-				<p id="questionTimer"></p>
-				<p id="timerMessage">    </p>
-			</div>
-			<div class="col-5"></div>
-		</div>
-
-
-
-
 	</div>
 
 
 
 
-
-
+	<div class="container allAnswers">
+		<div class="row">
+			<div class="col-1"></div>
+			<ul class="col-3">
+				<li><button class="btn btn-primary" id="buttonOne" type="button" value="answerOne"></button></li>
+				<li><button class="btn btn-primary" id="buttonTwo" type="button" value="answerTwo"></button></li>
+				<li><button class="btn btn-primary" id="buttonThree" type="button" value="answerThree"></button></li>
+				<li><button class="btn btn-primary" id="buttonFour" type="button" value="answerFour"></button></li>
+			</ul>
+			<div class="col-1"></div>
+			<div class="col-2 text-center">
+				<p id="timerDisplay"></p>
+				<p id="triviaMessage"></p>
+			</div>
+		</div>
+	</div>
 
 
 
