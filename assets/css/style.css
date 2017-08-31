@@ -1,0 +1,41 @@
+* {
+	font-family: verdana;
+}
+
+ul {
+	list-style: none;
+}
+
+header {
+	height: 120px;
+	background-color: #F3F3F3;
+	padding-top: 20px;
+	margin-bottom: 65px;
+}
+
+.allQuestions {
+	border-radius: 7px;
+	background-color: #F3F3F3;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: none;
+}
+
+.questionOne {
+	background-color: #8E8B82;
+	border-radius: 7px;
+
+	padding: 15px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+	margin-right: 25px;
+}
+
+.answersOne {
+	background-color: #E9DCBE;
+	border-radius: 7px;
+	
+	padding: 15px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
