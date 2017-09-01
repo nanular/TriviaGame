@@ -2,20 +2,25 @@
 	font-family: verdana;
 }
 
+@font-face {
+    font-family: "report";
+    src: url("../fonts/lansbury.ttf") format("truetype");
+}
+
 ul {
 	list-style: none;
 }
 
 header {
-	height: 120px;
+	height: 175px;
 	background-color: #F3F3F3;
 	padding-top: 20px;
 	margin-bottom: 65px;
 }
 
 h1 {
-	font-weight: bolder;
-	font-size: 3.75em;
+	font-family: "report";
+	font-size: 8.5em;
 }
 
 button {
@@ -28,6 +33,7 @@ button {
 	padding-top: 25px;
 	padding-bottom: 25px;
 	display: none;
+	font-size: 1.35em;
 }
 
 .currentQuestion {
@@ -53,7 +59,7 @@ button {
 }
 
 #timerDisplay {
-	font-size: 6.1em;
+	font-size: 4.1em;
 	font-weight: bolder;
 	vertical-align: center;
 }
